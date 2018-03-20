@@ -1,0 +1,89 @@
+.icon-lg {
+    font-size: 1.2em;
+}
+
+.icon-sm {
+    font-size: 0.8em;
+}
+
+.pb-70-percent {
+    width: 70%;
+}
+
+.pb-20-percent {
+    width: 20%;
+}
+
+.pb-80-percent {
+    width: 80%;
+}
+
+.messages-icon > .messages-number {
+    z-index: 1000;
+    font-size: 0.6em;
+    font-weight: bold;
+    display: table-cell;
+    color: #FFFFFF;
+    background: #5cb85c;
+    padding: 0.05em 0.3em 0.2em 0.3em;
+    border-radius: 50%;
+    opacity: 0.8;
+    position: relative;
+    top:-2.3em;
+    left: 1.2em;
+}
+
+.hover-image {
+    height: 80px;
+    width: 80px;
+}
+
+ .dark-hover {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.dark-hover:hover {
+    background: black;
+}
+
+.hover-image:hover {
+    opacity: 0.8;
+}
+
+
+/* .dark-hover > img {
+    width: 80px;
+}
+
+.dark-hover:hover:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    opacity: 0.2;
+} */
+
+.footer-text {
+    text-align: center;
+}
+
+@media (max-width: 450px) {
+
+    .footer-text {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 350px) {
+    
+    .footer-text {
+        font-size: 0.7em;
+    }
+}
+

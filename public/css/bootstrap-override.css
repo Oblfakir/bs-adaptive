@@ -1,0 +1,13 @@
+.tab-content {
+    padding-top: 10px;
+}
+
+.panel-default>.panel-heading .badge {
+    background-color: #777777;
+}
+
+.footer {
+    background-color: #EFEFEF;
+    height: 60px;
+    line-height: 60px;
+}

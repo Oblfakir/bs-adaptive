@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bootstrap Task 4</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-override.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Control Panel</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-user icon-lg"></span>
+                            Admin
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">My Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-lock icon-lg"></span> Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <h3>
+                    <span class="glyphicon glyphicon-briefcase icon-sm"></span> Toolbox
+                </h3>
+                <hr>
+                <ul class="nav nav-pills nav-stacked">
+                    <li>
+                        <a href="#Alerts">
+                            <span class="glyphicon glyphicon-flash icon-lg"></span> Alerts</a>
+                    </li>
+                    <li>
+                        <a href="#Links">
+                            <span class="glyphicon glyphicon-link icon-lg"></span> Links</a>
+                    </li>
+                    <li>
+                        <a href="#Reports">
+                            <span class="glyphicon glyphicon-list-alt icon-lg"></span> Reports</a>
+                    </li>
+                    <li>
+                        <a href="#Books">
+                            <span class="glyphicon glyphicon-book icon-lg"></span> Books</a>
+                    </li>
+                    <li>
+                        <a href="#Tools">
+                            <span class="glyphicon glyphicon-briefcase icon-lg"></span> Tools</a>
+                    </li>
+                    <li>
+                        <a href="#Realtime">
+                            <span class="glyphicon glyphicon-time icon-lg"></span> Real-time</a>
+                    </li>
+                    <li>
+                        <a href="#Advanced">
+                            <span class="glyphicon glyphicon-plus icon-lg"></span> Advanced..</a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-12">
+                <h3>
+                    <span class="glyphicon glyphicon-dashboard icon-sm"></span> Dashboard
+                </h3>
+                <hr>
+                <div class="row">
+                    <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h5>Inbox Messages
+                                    <span class="badge pull-right">3</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <h4>Processing Status</h4>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                Complete
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success pb-70-percent" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                                In Progress
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-info pb-20-percent" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                                As Risk
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger pb-80-percent" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12 col-xs-12">
+                        <ul class="nav nav-pills nav-justified">
+                            <li>
+                                <a href="#" role="button" class="btn btn-link">
+                                    <span class="glyphicon glyphicon-cog icon-lg"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button" class="btn btn-link">
+                                    <span class="glyphicon glyphicon-heart icon-lg"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button" class="btn btn-link">
+                                    <span class="glyphicon glyphicon-comment icon-lg messages-icon">
+                                        <span class="messages-number">3</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button" class="btn btn-link">
+                                    <span class="glyphicon glyphicon-user icon-lg"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button" class="btn btn-link">
+                                    <span class="glyphicon glyphicon-plus-sign icon-lg"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <p>This is a responsive dashboard-style layout that uses
+                            <a href="https://getbootstrap.com" target="_blank">Bootstrap 3</a>. You can use this template as a starting point to create something more unique.</p>
+                        <p>
+                            Visit the Bootstrap playground at
+                            <a href="https://www.bootply.com/" target="_blank">Link</a> to tweak this layout, or discover 1000's of Bootstrap code examples and snippets.
+                        </p>
+                        <hr>
+                        <div class="btn-group btn-group-justified" role="group">
+                            <a href="#" role="button" class="btn btn-info">
+                                <span class="glyphicon glyphicon-plus"></span>
+                                <br/> Service</a>
+                            <a href="#" role="button" class="btn btn-info">
+                                <span class="glyphicon glyphicon-cloud"></span>
+                                <br/> Cloud</a>
+                            <a href="#" role="button" class="btn btn-info">
+                                <span class="glyphicon glyphicon-cog"></span>
+                                <br/> Tools</a>
+                            <a href="#" role="button" class="btn btn-info">
+                                <span class="glyphicon glyphicon-question-sign"></span>
+                                <br/> Help</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <a href="#Reports" class="btn btn-link">
+                    <span class="glyphicon glyphicon-list-alt icon-lg"></span> Reports
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Visits</th>
+                            <th>ROI</th>
+                            <th>Source</th>
+                            <th>Description and notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>45</td>
+                            <td>2.45%</td>
+                            <td>Direct</td>
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est magnam incidunt ipsa tempore voluptatibus
+                                nisi pariatur cum perferendis</td>
+                        </tr>
+                        <tr>
+                            <td>289</td>
+                            <td>56.2%</td>
+                            <td>Referral</td>
+                            <td>Iste in debitis non sapiente odio suscipit saepe libero quia, accusamus cum, architecto nihil
+                                molestiae placeat!</td>
+                        </tr>
+                        <tr>
+                            <td>98</td>
+                            <td>25%</td>
+                            <td>Type</td>
+                            <td>Sit amet, consectetur adipisicing elit. asperiores odio ea distinctio iste quas voluptatem molestias
+                                mollitia. Quae est nesciunt a id.</td>
+                        </tr>
+                        <tr>
+                            <td>109</td>
+                            <td>8%</td>
+                            <td></td>
+                            <td>Consectetur adipisicing elit. Est magnam incidunt ipsa tempore voluptatibus nisi pariatur cum
+                                perferendis
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>14%</td>
+                            <td></td>
+                            <td>Amet consectetur adipisicing elit. Illum hic eveniet necessitatibus magni, velit aspernatur.
+                                Quidem sunt beatae sit cumque asperiores possimus.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active">
+                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="profile">
+                        <p>
+                            <span class="glyphicon glyphicon-user icon-lg"></span>
+                        </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, quia nulla dolore aliquid laborum sint consequatur! Eveniet
+                            facere dolor pariatur at exercitationem. Quia voluptates dolorum nesciunt ipsa magni autem perferendis!
+                        </p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="messages">
+                        <p>
+                            <span class="glyphicon glyphicon-comment icon-lg"></span>
+                        </p>
+                        <p>
+                            Quia voluptates dolorum nesciunt ipsa magni autem perferendis! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Odio, quia nulla dolore aliquid laborum sint consequatur! Eveniet facere dolor pariatur at exercitationem.
+                        </p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="settings">
+                        <p>
+                            <span class="glyphicon glyphicon-cog icon-lg"></span>
+                        </p>
+                        <p>
+                            Odio, quia nulla dolore aliquid laborum sint consequatur! Eveniet facere dolor pariatur at exercitationem. Lorem ipsum, dolor
+                            sit amet consectetur adipisicing elit. Quia voluptates dolorum nesciunt ipsa magni autem perferendis!
+                        </p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4>New Requests</h4>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">
+                                Hosting virtual mailbox serv..
+                            </a>
+                            <a href="#" class="list-group-item">Dedicated server doesn't..</a>
+                            <a href="#" class="list-group-item">RHEL 6 install on new..</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-info" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>Please remember to
+                    <a href="#Logout">Logout</a> for classified security.
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <ul class="nav nav-pills nav-stacked">
+                    <li>
+                        <a href="#LayoutsTemplates">
+                            <span class="glyphicon glyphicon-list icon-lg"></span> Layouts &amp; Templates</a>
+                    </li>
+                    <li>
+                        <a href="#Toolbox">
+                            <span class="glyphicon glyphicon-link icon-lg"></span> Toolbox</a>
+                    </li>
+                    <li>
+                        <a href="#Widgets">
+                            <span class="glyphicon glyphicon-link icon-lg"></span> Widgets</a>
+                    </li>
+                    <li>
+                        <a href="#Reports">
+                            <span class="glyphicon glyphicon-list-alt icon-lg"></span> Reports</a>
+                    </li>
+                    <li>
+                        <a href="#Pages">
+                            <span class="glyphicon glyphicon-book icon-lg"></span> Pages</a>
+                    </li>
+                    <li>
+                        <a href="#SocialMedia">
+                            <span class="glyphicon glyphicon-star icon-lg"></span> Social Media</a>
+                    </li>
+                </ul>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4>Submit Request
+                                <span class="glyphicon glyphicon-wrench pull-right"></span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <form action="#" method="POST">
+                            <label for="input-name">Name</label>
+                            <input type="text" class="form-control" id="input-name" placeholder="Enter Name" name="name">
+                            <label for="input-password">Password</label>
+                            <input type="password" class="form-control" id="input-password" placeholder="password" name="password">
+                            <label for="input-textarea">Details</label>
+                            <textarea type="password" class="form-control" id="input-textarea" name="text"></textarea>
+                            <label for="select">Select</label>
+                            <select id="select" class="form-control" name="select">
+                                <option>General question</option>
+                            </select>
+                            <br>
+                            <input type="submit" class="btn btn-primary" value="Post">
+                        </form>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4>Engagement</h4>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <div class="dark-hover">
+                                    <img src="img/img.png" alt="sample image" class="img-circle hover-image">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <div class="dark-hover">
+                                    <img src="img/img.png" alt="sample image" class="img-circle hover-image">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <div class="dark-hover">
+                                    <img src="img/img.png" alt="sample image" class="img-circle hover-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-text">This Bootstrap 3 dashboard layout is compliments of
+                <a href="#example">example</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
